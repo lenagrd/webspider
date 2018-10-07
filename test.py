@@ -1,7 +1,5 @@
-import pauk
+import pauk2 as p
 
-f = pauk.SimpleCrawler('urls.csv', 2, 'http://coreyms.com/')
-
+f = p.SimpleCrawler('urls.csv', 2, 'http://coreyms.com/')
 lst = f.buil_url_list()
-
-f.save_To_Csv("urls.csv")
+f.save_to_csv("urls.csv")
