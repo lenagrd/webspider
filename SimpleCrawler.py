@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import csv
-
+import time
 
 
 class SimpleCrawler:
@@ -96,5 +96,16 @@ class SimpleCrawler:
                 f_writer.writerow([url, value['frequency']])
 
 
+print("Starting...")
 
+if __name__ == "__main__":
+    print("Starting...")
 
+    start = time.time()
+    main_url = "http://coreyms.com/"
+
+    f = SimpleCrawler('urls.csv', 3, main_url)
+    lst = f.buil_url_list()
+    f.save_to_csv("urls.csv")
+
+    print('Entire job took:', time.time() - start)

@@ -2,5 +2,5 @@ log.txt
 test.py
 urls.csv
 /.idea
-/_pycache_
+/__pycache__
 /venv

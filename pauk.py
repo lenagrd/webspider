@@ -3,7 +3,7 @@ import requests
 #from urllib.parse import urlparse
 
 
-class SimpleCrawler:
+class SimpleCrawlerOld:
 
     url_is_visited = 1
     url_not_visited = 0
@@ -73,10 +73,10 @@ class SimpleCrawler:
 
 
 #
-# f = SimpleCrawler('urls.csv',2, 'http://coreyms.com/')
-#
-# lst = f.buil_url_list()
-#
-# f.save_To_Csv("urls.csv")
+f = SimpleCrawlerOld('urls.csv',2, 'http://coreyms.com/')
+
+lst = f.buil_url_list()
+
+f.save_To_Csv("urls.csv")
 
 
